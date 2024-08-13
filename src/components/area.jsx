@@ -70,7 +70,7 @@ export default function Area({ alert, mode }) {
           <button
             className={`btn ${
               mode == "dark" ? "btn-dark" : "btn-primary"
-            } mx-2`}
+            } mx-2 my-2`}
             onClick={uppercase}
           >
             UpperCase
@@ -78,7 +78,7 @@ export default function Area({ alert, mode }) {
           <button
             className={`btn ${
               mode == "dark" ? "btn-dark" : "btn-primary"
-            } mx-2`}
+            } mx-2 my-2`}
             onClick={lowercase}
           >
             LowerCase
@@ -86,7 +86,7 @@ export default function Area({ alert, mode }) {
           <button
             className={`btn ${
               mode == "dark" ? "btn-dark" : "btn-primary"
-            } mx-2`}
+            } mx-2 my-2`}
             onClick={extraspaces}
           >
             Remove extra spaces
@@ -94,7 +94,7 @@ export default function Area({ alert, mode }) {
           <button
             className={`btn ${
               mode == "dark" ? "btn-dark" : "btn-primary"
-            } mx-2`}
+            } mx-2 my-2`}
             onClick={cleartext}
           >
             Clear

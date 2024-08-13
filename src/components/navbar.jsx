@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import { faSun,faMoon } from '@fortawesome/free-regular-svg-icons'; // Example regular icon
 export default function Navbar({ mode, toggleMode }) {
   return (
     <nav

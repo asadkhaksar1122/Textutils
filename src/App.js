@@ -18,7 +18,6 @@ function App() {
    }, 3000);
  }
   const toggleMode = () => {
-    
    if (mode=="light") {
      setmode("dark")
      document.body.style.backgroundColor = "#3e3e42";

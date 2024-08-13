@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 export default function Navbar({ mode, toggleMode }) {
   return (
     <nav
@@ -34,17 +35,18 @@ export default function Navbar({ mode, toggleMode }) {
               </a>
             </li>
           </ul>
-          <div class="form-check form-switch" style={{color:mode=='dark'?"white":"black"}}>
-            <input
-              class="form-check-input"
-              type="checkbox"
-              role="switch"
-              id="flexSwitchCheckDefault"
-              onClick={toggleMode}
-            />
-            <label class="form-check-label" for="flexSwitchCheckDefault">
-              {mode==="light"?"Enable dark mode":"Enable Light mode"}
-            </label>
+          <div className="mode" onClick={toggleMode}>
+            {mode === "light" ? (
+              <FontAwesomeIcon
+                icon={faMoon}
+                style={{ fontSize: "30px", marginRight: "10px" }}
+              />
+            ) : (
+              <FontAwesomeIcon
+                icon={faSun}
+                style={{ fontSize: "30px", marginRight: "10px" }}
+              />
+            )}
           </div>
         </div>
       </div>

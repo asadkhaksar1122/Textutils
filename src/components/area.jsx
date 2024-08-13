@@ -7,19 +7,29 @@ export default function Area({ alert, mode }) {
   }
   function uppercase() {
     settext(text.toUpperCase());
-    alert("success", "Uppercase", "The text has been converted to uppercase");
+    if (text.length) {
+      alert("success", "Uppercase", "The text has been converted to uppercase");
+    }
   }
   function lowercase() {
     settext(text.toLowerCase());
-    alert("success", "Lowecase", "The text has been converted to Lowercase");
+    if (text.length) {
+      alert("success", "Lowecase", "The text has been converted to Lowercase");
+    }
   }
   function cleartext() {
     settext("");
-    alert("warning", "Cleared", "The text has been cleared");
+    if (text.length) {
+       alert("warning", "Cleared", "The text has been cleared");
+    }
+   
   }
   function extraspaces() {
     settext(text.replace(/\s+/g, " ").trim());
-    alert("success", "Extra", "The extra spaces has been removed");
+    if (text.length) {
+      alert("success", "Extra", "The extra spaces has been removed");
+    }
+    
   }
   function convertSecondsToMinutes(seconds) {
     if (seconds > 60) {
